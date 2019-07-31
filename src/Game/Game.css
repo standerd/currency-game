@@ -23,14 +23,26 @@
   font-size: 1.5em;
   border-radius: 10px;
 }
-.cardresult {
-  width: 90%;
+
+.loser {
+  width: 60%;
   display: inline-block;
   height: 200px;
-  background-color: pink;
+  background-color: lightpink;
   margin: 15px;
   text-align: center;
   padding-top: 10%;
+  font-size: 3em;
+  border-radius: 10px;
+}
+
+.winner {
+  width: 80%;
+  display: inline-block;
+  height: 300px;
+  background-color: lightpink;
+  margin: 15px;
+  text-align: center;
   font-size: 3em;
   border-radius: 10px;
 }

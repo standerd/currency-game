@@ -5,6 +5,7 @@
   border-radius: 15px;
   margin: 10px auto;
   padding: 15px;
+  background-color: lightpink;
 }
 
 input {
@@ -33,4 +34,9 @@ h1 {
   margin-bottom: 5px;
   border-radius: 10px;
   font-size: 1.4em;
+}
+
+.currButton:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }

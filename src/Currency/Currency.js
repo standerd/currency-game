@@ -53,6 +53,10 @@ class Currency extends Component {
           value={this.state.poundValue.toFixed(2) + " Pounds"}
           onChange={this.onChangeHandler}
         />
+        <br />
+        <button onClick={this.props.cancel} className="currButton">
+          QUIT
+        </button>
       </div>
     );
   }

@@ -52,10 +52,11 @@ class Game extends Component {
   winner = e => {
     let winnerScreen = (
       <div>
-        <div className="cardresult">
-          YOU ARE A WINNER - CONGRATULATIONS YOU HOWEVER DO NOT WIN ANYTHING OF
-          VALUE SORRY
+        <div className="winner">
+          <p>YOU ARE A WINNER CONGRATULATIONS</p>
+          <p>YOU HOWEVER DO NOT WIN ANYTHING OF VALUE SORRY</p>
         </div>
+        <br />
         <button onClick={this.refresh.bind(this)} className="gameButton">
           Try Again
         </button>
@@ -67,7 +68,8 @@ class Game extends Component {
 
     let loserScreen = (
       <div>
-        <div className="cardresult">YOU DID NOT WIN SORRY</div>
+        <div className="loser">YOU DID NOT WIN SORRY</div>
+        <br />
         <button onClick={this.refresh.bind(this)} className="gameButton">
           Try Again
         </button>

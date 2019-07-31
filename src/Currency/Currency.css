@@ -1,0 +1,36 @@
+.currency {
+  width: 80%;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 10px auto;
+  padding: 15px;
+}
+
+input {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+  width: 15%;
+  font-size: 1.5em;
+  border-radius: 10px;
+}
+
+label {
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+h1 {
+  margin-bottom: 35px;
+}
+
+.currButton {
+  margin-left: 10px;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  font-size: 1.4em;
+}

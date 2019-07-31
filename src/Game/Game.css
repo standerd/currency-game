@@ -1,0 +1,36 @@
+.card {
+  width: 30%;
+  display: inline-block;
+  height: 200px;
+  background-color: pink;
+  margin: 15px;
+  text-align: center;
+  padding-top: 10%;
+  font-size: 3em;
+  border-radius: 10px;
+}
+
+.card:hover,
+.gameButton:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.gameButton {
+  height: 50px;
+  width: 150px;
+  margin: 15px;
+  font-size: 1.5em;
+  border-radius: 10px;
+}
+.cardresult {
+  width: 90%;
+  display: inline-block;
+  height: 200px;
+  background-color: pink;
+  margin: 15px;
+  text-align: center;
+  padding-top: 10%;
+  font-size: 3em;
+  border-radius: 10px;
+}

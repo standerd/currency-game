@@ -7,6 +7,11 @@ class Game extends Component {
     display: ""
   };
 
+  // state.cards are sorted in a random order in the below function and the
+  // component is rendered based on this random number. This ensure that
+  // the card values change on each render of the component. This function
+  // is called by ComponentDidMount.
+
   randomNumber = () => {
     const array = this.state.cards;
     for (var i = array.length - 1; i > 0; i--) {
@@ -15,7 +20,7 @@ class Game extends Component {
       array[i] = array[j];
       array[j] = temp;
     }
-    console.log("state = " + this.state.cards);
+
     this.setState({
       display: (
         <div>
@@ -49,6 +54,11 @@ class Game extends Component {
     this.randomNumber();
   };
 
+  // once the user clicks on a card the below function is called,
+  // this checks if the card is 1 which is set to be the winning number.
+  // if it is the winnerScreen component is loaded, else the loserScree
+  //component is loaded.
+
   winner = e => {
     let winnerScreen = (
       <div>
@@ -78,6 +88,8 @@ class Game extends Component {
         </button>
       </div>
     );
+
+    // if check to see if the card is a winner, appropriate screen loaded.
 
     if (e.target.id === "1") {
       this.setState({ display: winnerScreen });

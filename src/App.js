@@ -9,13 +9,12 @@ class App extends Component {
     option: ""
   };
 
+  // function for getting user selection and calling the component set function
   onChangeHandler = e => {
     this.setState({ display: e.target.value }, this.changeRoute);
   };
 
-  reset = () => {
-    this.setState({ display: "", option: "" });
-  };
+  //component set function
 
   changeRoute = () => {
     if (this.state.display === "currency") {
@@ -23,6 +22,11 @@ class App extends Component {
     } else if (this.state.display === "game") {
       this.setState({ option: <Game reset={this.reset} /> });
     }
+  };
+
+  // reset button function, takes the user back to the landing screen
+  reset = () => {
+    this.setState({ display: "", option: "" });
   };
 
   render() {

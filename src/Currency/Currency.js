@@ -12,9 +12,14 @@ class Currency extends Component {
     poundExchange: 0.8214
   };
 
+  // user Value capture function
+
   onChangeHandler = e => {
     this.setState({ userValue: e.target.value });
   };
+
+  // once the user captures the value the conversion is done based on the rates contained
+  // in state
 
   convert = () => {
     this.setState({
@@ -35,22 +40,22 @@ class Currency extends Component {
         </button>
 
         <h1>Your Converted Values are Below</h1>
-        <label>ZAR Value </label>
+        <label>ZAR </label>
         <input
           type="text"
-          value={"R " + this.state.randValue.toFixed(2)}
+          value={this.state.randValue.toFixed(2)}
           onChange={this.onChangeHandler}
         />
-        <label>EURO Value </label>
+        <label>EUROS</label>
         <input
           type="text"
-          value={this.state.euroValue.toFixed(2) + " Euros"}
+          value={this.state.euroValue.toFixed(2)}
           onChange={this.onChangeHandler}
         />
-        <label>POUND Value </label>
+        <label>POUNDS </label>
         <input
           type="text"
-          value={this.state.poundValue.toFixed(2) + " Pounds"}
+          value={this.state.poundValue.toFixed(2)}
           onChange={this.onChangeHandler}
         />
         <br />
